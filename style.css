@@ -1,0 +1,237 @@
+.main {
+  width: 100%;
+  background: linear-gradient(45deg, #c614f3, #110236);
+  min-height: 100vh;
+  color: #fff;
+  position: relative;
+}
+
+.nav-bar {
+  width: 95%;
+  height: 15vh;
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  overflow: hidden;
+}
+
+#logo {
+  cursor: pointer;
+
+  border-radius: 5px !important;
+
+  box-shadow: rgba(0, 0, 0, 0.9);
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: whitesmoke !important;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  color: yellow !important;
+}
+
+.row {
+  width: 80%;
+  min-height: 85vh;
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  margin: 15px 0px;
+  min-width: 300px;
+  flex-basis: 50%;
+  height: 100%;
+  position: relative;
+}
+.text-box {
+  max-width: 400px;
+  margin-left:40px ;
+}
+.text-box:hover
+{
+    transform: scale(1.1,1.1);
+    transition: 1s transform;
+}
+.text-box h1 {
+  color: #ffe14e;
+  font-weight: 300;
+}
+.text-box h4 {
+  font-size: 50px;
+  font-weight: 100;
+  letter-spacing: 3;
+  animation: typing 2s steps(25), blink 1s step-end infinite alternate;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: white;
+  }
+}
+.gallery-box {
+  max-width: 400px;
+  position: relative;
+  margin: auto;
+}
+.gallery-box img {
+  width: 100%;
+  border: 10px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+}
+.gallery-box img:hover
+{
+    transform: scale(1.1,1.1);
+    transition: 1s transform;   
+}
+.gallery-box ul {
+  position: absolute;
+  right: -100px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.gallery-box ul li {
+  list-style: none;
+  font-size: 15px;
+  font-weight: 200;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 15px;
+}
+.gallery-box .active {
+  color: #ffe14e;
+  font-weight: bold;
+}
+.gallery-box ul li::after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: transparent;
+  top: 10px;
+  left: -40px;
+  position: absolute;
+}
+.gallery-box .active::after {
+  background: #ffe14e;
+}
+.gallery-box ul li:hover
+{
+    color: coral;
+    transform: scale(1.4,1.4);
+    transition: 0.8s transform;
+}
+
+.box {
+  align-items: center;
+  align-content: center;
+  margin-left: 4px;
+  padding: 0px 5px 5px 5px;
+  display: flexbox;
+  text-align: center;
+  width: 99%;
+}
+.box img {
+  width: 200px;
+  border-radius: 8px;
+  padding: 0px 5px 5px 5px;
+}
+.box img:hover {
+  transform: scale(1.5, 1.5);
+  transition: 1s transform;
+}
+.box1 {
+    align-items: center;
+    align-content: center;
+    margin-left: 4px;
+    padding: 0px 5px 5px 5px;
+    display: flexbox;
+    text-align: center;
+    width: 99%;
+    overflow: hidden;
+  }
+  .box1 img {
+    width: 200px;
+    border-radius: 8px;
+    padding: 0px 5px 5px 5px;
+    overflow: hidden;
+  }
+  .box1 img:hover {
+    overflow: hidden;
+    transform: scale(1.5, 1.5);
+    transition: 1s transform;
+    
+  }
+.card-container{
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+.card {
+  align-items: center;
+  align-content: center;
+  position: relative;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin: 10px;
+  width: 18rem;
+  display: inline-block;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.1,1.1)
+}
+.card-img-top
+{
+    width: 286px;
+    height: 286px;
+}
+.card-img-top:hover{
+    transform: scale(1.1,1.1) !important;
+  transition: 0.4s transform !important;
+}
+.card-title {
+  font-weight: 400;
+  color: pink;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(255, 181, 181);
+    border-radius: 10px;
+  }
+::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+  }
+
+  footer
+  {
+      text-align: center;
+      color: black;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 200;
+  }
+  .events{
+      font-weight: 250;
+      margin-left: 20px;
+  }
